@@ -1,0 +1,9 @@
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+for file in ~/.config/alias.d/*.zsh; do
+    source "$file"
+done
+
+prompt off
+eval "$(starship init zsh)"
